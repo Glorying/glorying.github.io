@@ -37,22 +37,22 @@
     <![endif]-->
     <script>
       // document.oncontextmenu = new Function("event.returnValue=false;"); //禁止右键功能
-      document.onkeydown = MM_KeyPress;
-      function MM_KeyPress(num) {
-        //防止系统退格键
-        var keycODe = event.keyCODe;
-        if (keycode == 8) {
-          //屏蔽退格健
-          event.keyCode = 0;
-          return;
-        }
-        if (keycode >= 122 && keycode <= 123) {
-          //屏蔽f12功能键
-          event.keyCode = 0;
-          event.returnValue = false;
-          return;
-        }
-      }
+      // document.onkeydown = MM_KeyPress;
+      // function MM_KeyPress(num) {
+      //   //防止系统退格键
+      //   var keycODe = event.keyCODe;
+      //   if (keycode == 8) {
+      //     //屏蔽退格健
+      //     event.keyCode = 0;
+      //     return;
+      //   }
+      //   if (keycode >= 122 && keycode <= 123) {
+      //     //屏蔽f12功能键
+      //     event.keyCode = 0;
+      //     event.returnValue = false;
+      //     return;
+      //   }
+      // }
       function gg() {
         layer.alert("本站永久免费<br>", {
           icon: 1,
@@ -95,14 +95,15 @@
   <body background="">
     <br />
     <div class="container mt-3">
-      <center><img src="img/BOcKrg.png" width="320px" height="120px" /></center>
+      <div style="margin-left: 25px;">
+        <center><img src="img/BOcKrg.png" width="540px" height="100px" /></center>
+      </div>
       <marquee style="color: red; font-size: large"
         ><img
           src="img/BOc8cX.png"
-          width="30px"
+          width="20px"
           height="20px"
-        />仅共自己使用查看自己的Q是否泄露
-        如已泄露请立即更换QQ密保手机号码</marquee
+        />仅供娱乐，请勿传播 love y all</marquee
       >
 
       <div class="fudong"></div>
@@ -118,8 +119,8 @@
               style="
                 background: linear-gradient(
                   to right,
-                  #b221ff,
-                  #14b7ff,
+                  #21d3ff,
+                  #d4ff14,
                   #8ae68a
                 );
               "
@@ -149,17 +150,18 @@
                     onclick="qbang('cha')"
                     class="btn btn-block btn-primary"
                     style="
-                      background: linear-gradient(to right, #b221ff, #14b7ff);
+                      background: linear-gradient(to right, #21d3ff, #149dff);
                     "
                     >查找</a
                   >
                 </div>
+                <!-- <div class="list-group-item">
+                  </div>
                 <div class="list-group-item">
-                  <!--</div>
-<div class="list-group-item">
-<a onclick="qbang('jiabai')" class="btn btn-block btn-primary" style="background: linear-gradient(to right,#5abdd8,#14b7ff);">加白</a>-->
-                </div>
-                <div class="list-group-item">
+                <a onclick="qbang('jiabai')" class="btn btn-block btn-primary" 
+                style="background: linear-gradient(to right,#5abdd8,#14b7ff);">加白</a>
+                </div> -->
+                <!-- <div class="list-group-item">
                   <a
                     target="_blank"
                     href="https://wet-22.xyz"
@@ -167,7 +169,7 @@
                     class="btn btn-info"
                     ><span <="" span="">Jonathan源码</span></a
                   >
-                </div>
+                </div> -->
               </div>
               <div class="list-group-item">
                 <div
@@ -220,20 +222,19 @@
           </div>
           <div class="panel panel-default text-center">
             <div class="panel-body">
-              ©&nbsp;2021&nbsp;&nbsp;Q绑在线查询
+              ©&nbsp;2022&nbsp;&nbsp;Q绑在线查询
 
               <div class="alert alert-danger" role="alert">
                 <div style="text-align: center">
-                  仅共自己使用查看自己的Q是否泄露<br />
-                  <br />
-
-                  <a
+                  Four season with no reason.@白色彗星WhiteMeteor<br />
+                  <!-- <a
                     target="_blank"
                     href="https://wet-22.xyz"
                     type="button"
                     class="btn btn-info"
-                    ><span <="" span="">源码站</span></a
-                  >
+                    >
+                    <span <="" span="">源码站</span>
+                    </a> -->
                 </div>
               </div>
             </div>
@@ -249,9 +250,9 @@
         } else {
           if ($mod == "cha") {
             dialog(
-              '<div style="text-align:center"><br><b style="color:#ff4425">仅供查询自己的QQ号码<br>不是自己的请立即退出本页面<br>否则，发生的一切后果本人不负责<br><br>确认查询？？</b><br><br><a onclick=' +
+              '<div style="text-align:center"><br><b style="color:#ff2121">查询结果仅供参考<br>不是自己的请立即退出本页面<br>否则，发生的一切后果本人不负责<br><br>确认查询？？</b><br><br><a onclick=' +
                 'queren("cha")' +
-                ' class="btn btn-block btn-primary" style="background: linear-gradient(to right,#b221ff,#14b7ff);">确认</a><br></div>',
+                ' class="btn btn-block btn-primary" style="background: linear-gradient(to right,#149dff,#149dff);">确认</a><br></div>',
               1
             );
           } else {
